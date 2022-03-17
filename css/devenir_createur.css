@@ -1,0 +1,131 @@
+.devCrea-texte{
+    text-align: center;
+    margin: 15px 50px 25px 50px;
+    
+}
+.devCrea-texte > p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.devCrea {
+    position: relative;
+    padding-top: 130px;
+    min-height: 93vh;
+}
+
+.devCrea-container {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 15vh 8vw;
+}
+
+.devCrea-img {
+    border-radius: 20px;
+    width: 650px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.devCrea-data {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.devCrea-title {
+    text-align: center;
+    font-family: Poppins Bold;
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.button-devCrea {
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px 26px;
+    font-size: 14px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    box-sizing: border-box;
+    width: 180px;
+
+    color:var(--black);
+    text-decoration: none;
+}
+
+.button-devCrea:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+@media screen and (max-width: 1300px) {
+    .devCrea-container {
+        min-width: 500px;
+        flex-direction: column;
+        margin: 2vh 2vw;
+    }
+    .devCrea-data {
+        margin-top: 0;
+        font-size: 15px;
+    }
+    .devCrea-title{
+        margin-top:25px;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .devCrea-texte{
+        margin:15px 120px 25px 120px;
+    }
+
+    .devCrea-img {
+        width: 400px;
+        margin-top: 75px;
+        
+    }
+    .button-devCrea {
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .devCrea-container {
+        flex-direction: column;
+        min-width: 360px;
+        margin: 1vh 1vw;
+    }
+    .devCrea-data {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .devCrea-title{
+        margin:0 0;
+        font-size: 20px;
+    }
+
+    .devCrea-texte{
+        margin:15px 60px 15px 60px;
+    }
+
+    .devCrea-img {
+        width: 250px;
+        margin-top: 80px;
+    }
+}

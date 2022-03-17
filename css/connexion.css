@@ -1,0 +1,69 @@
+.sectionConnexion{
+    height: 93vh;
+}
+
+label {
+    margin: 30px 0 5px 0;
+}
+
+.col {
+    margin: 0;
+}
+
+.btnConnexion {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 55px;
+    cursor: pointer;
+    background-color: var(--white);
+    padding: 0 20px;
+    font-size: 18px;
+    transition: .3s all;
+}
+ 
+.btnConnexion:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+.connect-button {
+    display: flex;
+    justify-content: center;
+}
+
+.connectOublie{
+    margin: 50px 0 0 0;
+}
+
+.boldLink {
+    font-family: Poppins Bold;
+    text-decoration: none;
+    color: var(--orange);
+    margin-left: 5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px 0;
+}
+
+.optionLigne {
+    margin: 7px 0 7px 0;
+    font-family: Poppins Bold;
+}
+
+@media screen and (max-width: 320px) {
+    .options {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 835px) {
+    .btnConnexion {
+        font-size: 14px;
+        height: 45px;
+    }
+}

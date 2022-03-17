@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/global.css" type="text/css" />
+    <link rel="stylesheet" href="../css/contact.css" type="text/css" />
+    <link rel="stylesheet" href="../css/inscription.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> "Inscription Bravo"</title>
+</head>
+
+<body>
+    
+    <main>
+        <section id="inscription" class="sectionInscription">
+            <div class="divForm">
+                <h2 class="title">Inscription</h2>
+                <form action="forminscription" id="formulaire" class="contactForm" method="post">
+                    <div class="row firstRow">
+                        <div class="col">
+                            <label for="firstname">Prénom</label>
+                            <input class="inputContact" name="firstname" id="firstname" required type="text">
+                        </div>
+                        <div class="col">
+                            <label for="lastname">Nom</label>
+                            <input class="inputContact" name="lastname" id="lastname" required type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="email">E-mail</label>
+                            <input class="inputContact" name="email" id="email" required type="email">
+                        </div>
+                        <div class="col">
+                            <label for="birthDate">Date de naissance</label>
+                            <input class="inputContact" name="birthDate" id="birthDate" required type="date">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="password1">Mot de passe</label>
+                            <input class="inputContact" type="password" id="password1" name="password1">
+                        </div>
+                        <div class="col">
+                            <label for="password2">Confirmer le mot de passe</label>
+                            <input class="inputContact" type="password" id="password2" name="password2">
+                        </div>
+                    </div>
+                    <div class="divCgu">
+                        <input class="cguCheckbox" type="checkbox" name="cgu" id="cgu">
+                        <label class="cgu" for="cgu">J'accepte les <a class="lienCgu" href="mentions_legales.html">conditions
+                                générales d'utilisation</a></label>
+                    </div>
+                    <p class="dejaInscrit">Déjà inscrit? <a class="boldLink" target="_blank" href="connexion.html">Se
+                            connecter</a></p>
+                    <input class="btnInscription" type="submit" id="valider" name="valider" value="→ S'inscrire" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>

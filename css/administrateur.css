@@ -1,0 +1,501 @@
+.sectionAdmin{
+    padding-top: 150px;
+}
+
+.divContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 50px 100px;
+}
+
+span{
+    cursor: pointer;
+}
+
+/*Boutons de modules*/
+.divOptions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.listBtnOption {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 0 0;
+}
+
+.btnOption {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+    background-color: var(--white);
+    color:var(--black);
+    padding: 0 40px;
+    margin: 0 50px 0 0;
+    font-size: 15px;
+    transition: .3s all;
+    white-space: nowrap;
+}
+
+.btnOption:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+/*Création de modules*/
+.divCreation {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCreations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    */
+    margin: 20px 0 0 0;
+}
+
+.moduleEnCours {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0 0 25px 0;
+}
+
+.textData {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 25px;
+}
+
+.imgModule {
+    width: 100px;
+    height: 153px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.lienOrange {
+    font-family: Poppins Medium;
+    color: var(--orange);
+    
+}
+
+.lienOrange:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+.showPopup:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.titleModule {
+    font-family: Poppins semibold;
+    white-space: nowrap;
+}
+
+.nameUser{
+    text-decoration: none;
+    color:var(--black);
+    cursor:default;
+}
+
+/*container Bottom*/
+.containerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+
+/*Modules reçus */
+.containerRecu {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px 0;
+}
+
+.moduleRecu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 25px 0;
+
+}
+
+.imgRecu {
+    width: 100px;
+    height: 153px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/*Demandes users*/
+.containerDemand {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+.demand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 25px 0;
+    width: 550px;
+    white-space: nowrap;
+}
+
+.userProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatarUser {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.nomUser {
+    font-family: Poppins Semibold;
+    color: var(--orange);
+}
+
+.roleUser {
+    font-family: Poppins Medium;
+    color: var(--black);
+}
+
+.voirDemande {
+    font-family: Poppins Medium;
+    color: var(--black);
+}
+
+/*gestion des users*/
+.divGestion {
+    display: flex;
+    flex-direction: column;
+
+    /*à enlever*/
+}
+
+.listUsers {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+.userOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.userGestion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+}
+
+.infoUser {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.showBannedUsers {
+    background: var(--orange);
+    color: var(--white) !important;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    padding: 8px 40px;
+    margin: 0 0 0 70px;
+    white-space: nowrap;
+}
+
+.btnBan,
+.btnUnban {
+    background: var(--orange);
+    color: var(--white) !important;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 40px;
+    margin: 0 0 0 70px;
+}
+
+.btnRole {
+    background: var(--white);
+    color: var(--black) !important;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 40px;
+    width: 237px;
+    margin: 0 0 0 70px;
+}
+
+.noAction {
+    margin: 0 245px 0 0;
+    font-family: Poppins Medium;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 0 0;
+    ;
+}
+
+.formSearchUser {
+    background-color: transparent;
+    width: 300px;
+    height: 44px;
+    border-radius: 15px;
+    border: 2px solid var(--orange);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputSearchUser {
+    all: unset;
+    font-size: 16px;
+    color: var(--orange);
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: var(--orange);
+    opacity: 0.7;
+    font-size: 14px
+}
+
+.btnSearchUser {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.searchSvg {
+    color: var(--orange);
+    fill: currentColor;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+
+h3 {
+    font-family: Poppins Semibold;
+    /*white-space: nowrap;*/
+}
+
+h2 {
+    white-space: nowrap;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1440px) {
+    .containerBottom {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .imgModule {
+        width: 80px;
+        height: 122px;
+
+    }
+
+    .imgRecu {
+        width: 80px;
+        height: 122px;
+
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .listBtnOption {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnOption {
+        width: 300px;
+        margin: 15px 0 0 0;
+    }
+
+    .containerCreations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .noAction {
+        white-space: nowrap;
+        margin: 10px 0 0 0;
+    }
+
+    .listUsers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .userOptions {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 25px 0;
+    }
+
+    .btnBan {
+        margin: 10px 0 10px 0;
+        height: 30px;
+        width: 237px;
+    }
+
+    .btnRole {
+        margin: 0;
+        height: 30px;
+        width: 237px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .containerCreations {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .demand {
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .btnRole {
+        width: 184px;
+    }
+
+    .btnBan {
+        width: 184px;
+    }
+
+    .avatarUser {
+        width: 40px;
+    }
+
+    .infoUser {
+        font-size: 13px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .showBannedUsers {
+        margin: 15px 0 0 0;
+        width: 184px;
+        height: 30px;
+        padding: inherit;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .listUsers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 17px;
+    }
+
+    .voirDemande {
+        font-size: 15px;
+    }
+
+    .noAction {
+        font-size: 14px;
+    }
+
+    .titleModule {
+        font-size: 15px;
+    }
+
+    .titleModuleRecu {
+        font-size: 15px;
+    }
+
+    .lienOrange {
+        font-size: 13px;
+
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .demand {
+        flex-direction: column;
+    }
+
+    .voirDemande {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .divContainer {
+        margin: 0 30px 50px 30px;
+    }
+
+    .formSearchUser {
+        height: 35px;
+    }
+
+    .infoUser {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {
+    .btnOption {
+        width: 250px;
+
+        font-size: 15px;
+        padding: 0;
+    }
+}

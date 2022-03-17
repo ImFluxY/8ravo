@@ -1,0 +1,43 @@
+<div class="top-data">
+    <div class="left">
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="title">Titre de l'étape</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="title" class="inputCreate" required>
+        </div>
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="source">Lien de la source image</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="source" class="inputCreate" required>
+        </div>
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="image" class="">Image de l'étape</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="file" name="image" alt="" src="" accept="image/png, image/jpeg" class="input-file" required>
+            <p class="max-size-text">Taille maximale : 5 Mo<br>jpg et png accepté</p>
+            <!--<p class="file-return"></p>-->
+        </div>
+    </div>
+    <div class="right">
+        <div class="input-block text-step">
+            <div class="bloc-label">
+                <label for="content-text-step">Texte de l'étape</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <textarea type="text" name="content-text-step" maxlength="1000" cols="50" rows="50" class="inputCreate" required></textarea>
+            <p class="counter">nb / max</p>
+        </div>
+    </div>
+</div>
+<div class="bottom-data">
+    <div class="block-btn-save-step">
+        <input type="submit" value="Enregistrer cette étape" class="btn1 btn-save-step">
+    </div>
+    <!-- <button class="next-step">Étape suivante</button> -->
+</div>

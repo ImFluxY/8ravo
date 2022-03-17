@@ -1,0 +1,442 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 93vh;
+    justify-content: center;
+    width: 100%;
+    padding-top: 130px;
+}
+
+.profile>div {
+    margin: auto 5vw;
+}
+
+/* Section 1*/
+
+.profilePrincipale {
+    display: flex;
+    flex-direction: column;
+    width:30%
+}
+
+.fauxFormulaire {
+    visibility: visible;
+
+}
+
+
+.enteteProfile {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.divImgProfil {
+    display: flex;
+    height: 180px;
+    min-width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    margin-right: 40px;
+
+}
+
+.pseudoFormulaire {
+    margin: auto 5vw;
+}
+
+.pseudoFormulaire .divImgProfil {
+    position: relative;
+}
+
+.pseudoFormulaire .btn-modify-avtar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--orange);
+    transition-duration: 250ms;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    transform: translateY(80%) scale(1);
+    cursor: pointer;
+}
+
+.pseudoFormulaire .btn-modify-avtar::before {
+    content: 'Modifier l\'avatar';
+    -webkit-user-select: none;
+    color: var(--white);
+    font-size: 0.8rem;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+}
+
+.pseudoFormulaire .divImgProfil:hover .btn-modify-avtar {
+    display: block;
+    padding-top: 50%;
+    transition-duration: 250ms;
+    transform: translateY(0) scale(1.1);
+}
+
+.input-file::-webkit-file-upload-button {
+    visibility: hidden;
+    margin: 0;
+}
+
+.imgProfile {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.titreProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pseudoProfile {
+    font-family: Poppins Bold;
+    color: var(--orange);
+    font-size: 32px;
+    white-space: nowrap;
+}
+
+.roleProfile {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.formulaireProfile {
+    display: flex;
+    flex-direction: column;
+}
+
+.caseProfile {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.nomPrenomProfile,
+.dateMdpProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.caseProfileNom,
+.caseProfilePrenom,
+.caseProfileDate,
+.caseProfileMdp {
+    width: 47%;
+}
+
+label {
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0
+}
+
+h3,
+label {
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0
+}
+
+.barreTextProfile {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--black);
+    padding: 16px 12px;
+    font-size: 14px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.inputProfile {
+    background-color: transparent;
+    color: var(--black);
+    padding: 6px 12px;
+}
+
+.textMdpProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lienModifMdp {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 12px;
+}
+
+.lienModifMdp:hover {
+    text-decoration: underline;
+}
+
+.textMdpProfile>button,
+.annulerProfile {
+    color: var(--orange);
+    font-size: 12px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.textMdpProfile>button:hover,
+.annulerProfile:hover {
+    text-decoration: underline;
+}
+
+.divBtnProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.btnProfile {
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px 26px;
+    font-size: 14px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    display: flex;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+
+.btnProfile:hover {
+    color: var(--white);
+    background: var(--orange);
+}
+
+.divSelectAvatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divFileAvatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.divBtnAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exempleImgModule {
+    cursor: pointer;
+    transition-duration: 300ms;
+    margin: auto 0;
+    height: 150px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.exempleImgModule:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+.annulerProfile {
+    margin-bottom: 0;
+}
+
+.avatarDefault>label {
+    width: 15%;
+}
+
+.avatarDefault>label>img {
+    width: 100%;
+}
+
+.notificationsProfile {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    overflow-y: auto;
+}
+
+.notifProfile {
+    background-color: rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    align-items: center;
+}
+
+.notifProfile>img {
+    width: 20px;
+}
+
+.notifProfile a {
+    color: var(--orange);
+    font-style: italic;
+    font-size: 10px;
+}
+
+.notifProfile a:hover {
+    text-decoration: underline;
+}
+
+.dateNotif {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.notifProfile>div {
+    margin: 0 10px 0 15px;
+}
+
+/* Section 2 */
+
+.modulesProfile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileH2 {
+    text-align: start;
+    font-family: Poppins Medium;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+}
+
+.lignesProfilModule {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    min-width: 610px;
+}
+
+.imagesModule {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    min-height: 16vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 610px;
+}
+
+.profilModuleCadreImg {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    min-width: 80px;
+    width: 80px;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.profilModuleCadreImg>img {
+    width: 240px;
+}
+
+.noteProfile {
+    font-family: Poppins Medium;
+    font-size: 13px;
+    color: var(--orange);
+
+    position: absolute;
+    top: 96px;
+    left: 9px;
+
+}
+
+.lienModule {
+    min-width: 7px
+}
+
+.profilModuleImg {
+    max-width: 80px;
+    min-height: 120px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+    .profile {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profilePrincipale {
+        width: 75%;
+        margin: 25px 25px 25px 35px;
+    }
+
+    .modulesProfile {
+        width: 85%;
+        margin-right: 0;
+    }
+
+    .profile>div {
+        margin: 5vh 5vw;
+    }
+
+    .lignesProfilModule{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divImgProfil {
+        display: flex;
+        width: 100px;
+        border-radius: 100px;
+        overflow: hidden;
+    }
+
+    .profilePrincipale {
+        margin: 25px;
+        width: 90%;
+    }
+
+    .dateNotif {
+        font-size: 12px;
+    }
+
+    .titreProfile {
+        margin-left: 20px;
+    }
+
+    .pseudoProfile {
+        font-size: 20px;
+    }
+
+}

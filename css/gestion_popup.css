@@ -1,0 +1,987 @@
+
+.popup {
+    box-shadow: 2px 12px 32px 0px rgba(153, 153, 153, 0.51);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 50px;
+    border-radius: 10px;
+    overflow: auto;
+    z-index: 99;
+}
+
+.background_popup{
+    z-index: 95;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.lien-btn-top{
+    z-index: 100;
+}
+
+.top-arrow {
+    position: fixed;
+    z-index: 100;
+    width: 25px;
+    right: 10vw;
+    bottom: 12vh;
+    opacity: 75%;
+    transition: 0.4s all;
+}
+
+.top-arrow:hover {
+    transform: scale(1.2);
+    transition: 0.4s all;
+    opacity: 100%;
+}
+
+.cross {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.popup-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup h1 {
+    color: var(--black);
+    font-family: Poppins Bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.name-creator-title {
+    text-align: center;
+    color: var(--black);
+    font-family: Poppins Semibold;
+    font-size: 14px;
+}
+
+.name-creator {
+    color: var(--orange);
+    font-family: Poppins Bold;
+}
+
+.popup-menu p {
+    color: var(--black);
+    margin-bottom: 30px;
+    font-family: Poppins Medium;
+}
+
+.popup-menu.create .nav {
+    margin: 2vh 0.5vw 0 0.5vw;
+    text-align: center;
+}
+
+.popup-menu .fill-nav {
+    border-radius: 8px;
+    background: transparent;
+    padding: 0.5vh 1.5vw;
+    margin: 1vh 0.5vw;
+    border: 2px solid var(--orange);
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--orange);
+    font-family: Poppins Medium;
+    display: inline-block;
+}
+
+.popup-menu .fill-nav:hover {
+    background: var(--orange);
+    color: var(--white);
+    transition: .3s all;
+}
+
+.popup-menu .fill-nav.saved {
+    background: var(--orange);
+    color: var(--white);
+}
+
+h3 {
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+.input-file::-webkit-file-upload-button {
+    visibility: hidden;
+    margin: 0;
+}
+
+.input-file::before {
+    content: 'Sélectionner un fichier';
+    display: inline-block;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-right: -100px;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+
+.input-file:hover::before {
+    border-color: none;
+}
+
+.input-file:active::before {
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+}
+
+/*------- popup modifier module --------*/
+
+.popup-content.modify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.btn2.btn-modify-select-module {
+    margin: 20px auto;
+}
+
+.bloc-input-modify {
+    margin: 4vh 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc-input-modify .input-block {
+    margin: 4vh 15px;
+}
+
+.block-btn-modify{
+    display: flex;
+    justify-content: center;
+}
+
+.btn2.btn-modify-select-module {
+    margin: 20px auto;
+}
+
+/*------- popup supprimer module --------*/
+
+.popup-content.delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.btn2.btn-delete-select-module {
+    margin: 20px auto;
+}
+
+.bloc-input-delete {
+    margin: 4vh 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc-input-delete .input-block {
+    margin: 4vh 15px;
+}
+
+.block-btn-delete{
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-confirm-delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text-confirm-delete{
+    text-align: center;
+    color: var(--black);
+    font-family: Poppins Regular;
+    font-size: 14px;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+/*------- popup refuse --------*/
+
+.popup.refuse {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.popup-content.refuse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.refuse .title-popup {
+    margin: 2vh 0;
+}
+
+.refuse .bloc {
+    margin: 1.5vh 5vw;
+    width: 40vw;
+}
+
+.case {
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(214, 214, 214, 0.51);
+    cursor: default;
+    white-space: normal;
+}
+
+.btn-modif-module {
+    margin-bottom: 0;
+}
+
+/*------- popup liste bannis --------*/
+
+.popup.banned {
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.bloc-search.banned{
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+.listUsers.banned{
+    margin: 1vh 5vw;
+}
+
+.listUsers.banned .userOptions{
+    margin: 3vh 5vw;
+}
+
+.btn2.btn-unban{
+    width: 150px;
+    margin: 0 0 0 5vw;
+}
+
+/*------- popup demande créateur --------*/
+
+.btn1, .btn2{
+    cursor: pointer;
+}
+
+.popup.demande {
+    height: 75vh;
+    width: 60vw;
+    overflow-x: none;
+    overflow-y: auto;
+}
+
+.popup-content.demande {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.bloc-infos-user-demande {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-user {
+    margin: 10px 15px;
+}
+
+.him-explain {
+    margin: 10px 15px;
+    max-width: 100%;
+}
+
+.block-btn-demande {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn2.btn-accept-demande,
+.btn1.btn-refuse-demande {
+    width: 350px;
+    margin: 20px auto;
+}
+
+.btn-ban {
+    color: var(--orange);
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Poppins Semibold;
+    font-style: italic;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+/*------- create popup --------*/
+
+/*-- general --*/
+
+.popup.create {
+    width: 85vw;
+    height: 85vh;
+}
+
+.title-step {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.name-step {
+    color: var(--orange);
+    font-size: 20px;
+    font-family: Poppins Medium;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pen-modify.active {
+    display: block;
+}
+
+.pen-modify {
+    display: none;
+    width: 15px;
+    margin-left: 15px;
+    transition-duration: 200ms;
+}
+
+.pen-modify:hover {
+    transform: scale(1.2);
+}
+
+.line {
+    display: inline-block;
+    height: 1.5px;
+    width: 45vw;
+    background-color: var(--orange);
+}
+
+.data-step {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.top-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3vh 10vw 0;
+}
+
+.bottom-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left,
+.right {
+    width: 50%;
+    margin: 0 1.5vw;
+}
+
+.input-block {
+    margin: 0 25px 25px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+h3,
+label {
+    font-size: 16px;
+    font-family: Poppins Semibold;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.inputCreate {
+    border: 1.5px solid var(--orange);
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.inputCreate:focus {
+    border: 2px solid var(--orange);
+    outline: none;
+}
+
+.inputCreate.none {
+    background-color: rgba(214, 214, 214, 0.51);
+}
+
+.counter {
+    font-size: 12px;
+    font-family: Poppins Italic;
+    color: var(--black);
+    opacity: 80%;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+
+.max-size-text {
+    font-size: 12px;
+    font-family: Poppins Italic;
+    color: var(--black);
+    opacity: 80%;
+}
+
+.btn1 {
+    border: 1.5px solid var(--orange);
+    background-color: var(--white);
+}
+
+.btn1:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+.btn2 {
+    border: 1.5px solid var(--orange);
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.btn2:hover {
+    background: transparent;
+    color: var(--black);
+}
+
+.btn1,
+.btn2 {
+    border-radius: 10px;
+    margin: 50px 10px;
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Poppins Medium;
+    transition: .3s all;
+}
+
+.obligatory {
+    color: var(--orange);
+    margin-bottom: 16px;
+    font-family: Poppins Bold;
+    margin-left: 5px;
+}
+
+.obligatory.none {
+    color: var(--white);
+}
+
+.bloc-label {
+    display: inline-flex;
+}
+
+.arrow-select {
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    top: 53px;
+    width: 15px;
+}
+
+/*-- global module --*/
+
+.input-block {
+    position: relative;
+}
+
+.description-module textarea {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 150px;
+}
+
+.choice-category-text,
+.choice-type-text {
+    font-style: Italic;
+    font-weight: lighter;
+}
+
+.new-categorie-text {
+    font-weight: Bold;
+}
+
+/*-- steps --*/
+
+.input-block.select.type-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto 4vh auto;
+    width: 20vw;
+}
+
+.inputCreate.type-choice {
+    margin: 0 10vw;
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-save-step.saved {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: .3s all;
+    position: relative;
+}
+
+/*-- steps text img--*/
+
+.text-step textarea {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 150px;
+}
+
+/*-- steps video--*/
+
+.text-add-step textarea {
+    width: 100%;
+    height: 185px;
+    padding-bottom: 150px;
+}
+
+.or-text {
+    font-size: 16px;
+    font-family: Poppins Italic;
+    font-weight: bold;
+    color: var(--orange);
+    margin: 15px 0;
+}
+
+/*-- steps audio--*/
+
+.double-input-file {
+    display: flex;
+    flex-direction: row;
+}
+
+/*-- quiz --*/
+
+.question {
+    margin-top: 4vh;
+}
+
+.bloc-quiz {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin: 0 auto;
+}
+
+.bloc-reponses {
+    display: flex;
+    flex-direction: row;
+    width: 55vw;
+}
+
+.input-block.reponse {
+    width: 100%;
+}
+
+.input-block.reponse:nth-child(1n+3) {
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 0;
+}
+
+.input-block.reponse:nth-child(even) {
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.bloc-true {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bloc-true label {
+    font-size: 12px;
+    font-family: Poppins Italic;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.line.black {
+    margin: 0;
+    height: 1px;
+    width: 55vw;
+    background-color: var(--black);
+}
+
+.bloc-btn-add-question {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bloc-btn-add-question p {
+    font-size: 10px;
+    font-family: Poppins Italic;
+    font-weight: bold;
+    color: var(--black);
+    margin: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 27px;
+}
+
+.btn-add-question {
+    height: 40px;
+    width: 150px;
+    padding: 8px;
+    font-size: 12px;
+    margin: 50px 10px;
+}
+
+.bloc-delete-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bloc-delete-question.none {
+    display: none;
+}
+
+.cross-delete-question {
+    width: 12px;
+    margin-right: 10px;
+}
+
+.text-delete-question {
+    font-size: 12px;
+    font-family: Poppins Italic;
+    font-weight: Semibold;
+    color: var(--orange);
+}
+
+/*-- boutons envoyer --*/
+
+.bloc-over {
+    text-align: center;
+}
+
+.bloc-btn-over {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloc-btn-over.none {
+    display: none;
+}
+
+.btn-publish-module,
+.btn-send-admin,
+.btn-accept-module {
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 50px 10px;
+}
+
+/*-- block reponse refuser --*/
+
+.block-btn-send-reponse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.infos-refuse {
+    width: 55vw;
+    margin: 0 auto;
+}
+
+.infos-refuse textarea {
+    width: 100%;
+    height: 400px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+.btn-send-reponse {
+    margin: 0 auto;
+}
+
+
+.popup.delete, .popup.modify  {
+    width: 50vw;
+    height: 50vh;
+    overflow-y: hidden;
+}    
+
+@media screen and (max-width: 1025px) {
+
+    .top-arrow {
+        width: 20px;
+    }
+
+    .arrow-select {
+        display: none;
+    }
+
+    .data-step {
+        margin-top: 4vh;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .top-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .inputCreate {
+        border: 1.5px solid var(--orange);
+        border-radius: 10px;
+        height: 45px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .inputCreate.type-choice {
+        margin: 0 25vw;
+        height: 45px;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .bottom-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .btn1,
+    .btn2 {
+        height: 40px;
+        width: 200px;
+        padding: 10px;
+        font-size: 14px;
+        transition: .3s all;
+        margin: 10px 5px;
+    }
+
+    /*-- steps --*/
+    .input-block.select.type-choice {
+        width: 30vw;
+    }
+
+    .inputCreate.type-choice {
+        width: 100%;
+    }
+
+    /*-- steps audio--*/
+
+    .double-input-file {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*-- steps quiz--*/
+
+    .bloc-btn-add-question p {
+        font-size: 10px;
+        font-family: Poppins Italic;
+        font-weight: bold;
+        color: var(--black);
+        margin: 0;
+        position: absolute;
+        bottom: -6px;
+        left: 50px;
+    }
+
+    .bloc-reponses {
+        display: flex;
+        flex-direction: column;
+        width: 55vw;
+    }
+
+    /*------- popup demande créateur --------*/
+
+    .bloc-infos-user-demande {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bloc-btn-over {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bloc-btn-over button{
+        margin: 1vh auto;
+    }
+
+    .block-btn-send-reponse {
+        margin: 5vh auto 0;
+    }
+
+    /*------- popup modifier module --------*/
+
+    .bloc-input-modify {
+        margin: 4vh 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc-input-modify .input-block {
+        margin: 3vh 0;
+    }
+
+    /*------- popup supprimer module --------*/
+
+    .popup.delete, .popup.modify {
+        overflow-y: auto;
+    }    
+
+    .bloc-input-delete {
+        margin: 4vh 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc-input-delete .input-block {
+        margin: 3vh 0;
+    }
+}
+
+
+/* styles de base si JS est activé 
+.js .input-file-container {
+	position: relative;
+	width: 225px;
+}
+
+.js .input-file-trigger {
+    border-radius: 10px;
+	display: block;
+    padding: 8px 0 0 15px;
+	background: transparent;
+    border: 1.5px solid var(--orange);
+	color: var(--orange) ;
+	font-size: 1em;
+	transition: all .4s;
+	cursor: pointer;
+    height: 45px;
+}
+
+.js .input-file {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 225px;
+	padding: 14px 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* quelques styles d'interactions 
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+	background: var(--orange);
+	color: var(--white);
+}
+
+/* styles du retour visuel 
+.file-return {
+	margin: 0;
+}
+
+.file-return:not(:empty) {
+	margin: 1em 0;
+}
+
+.js .file-return {
+	font-style: italic;
+	font-size: .9em;
+	font-weight: bold;
+}
+
+/* on complète l'information d'un contenu textuel uniquement lorsque le paragraphe n'est pas vide 
+.js .file-return:not(:empty):before {
+	content: "Selected file: ";
+	font-style: normal;
+	font-weight: normal;
+}
+*/

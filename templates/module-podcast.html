@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module - 8ravo</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/texte.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-website">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="accueil.html" class="logo">8ravo</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Contact</a></li>
+
+                <li><a class="log-in" href="#">Connexion</a></li>
+                <li><a class="sign-in" href="#">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <section class="text" id="text">
+            <div class="progress">
+                <span class="fill-progress"></span>
+                <span class="fill-progress"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="text-container container">
+                <div class="left">
+                    <img src="../img/modules/iss/iss_2.jpg" alt="" class="text-img">
+                    <audio src="../audio/creation_iss.mp3" controls></audio>
+                    <a href="https://twitter.com/?lang=fr">Source</a>
+                </div>
+                <div class="text-data">
+                    <h1 class="text-title">Sa création et son lancement</h1>
+                    <p class="text-description">
+                        La construction de la station est décidée en 1998 à Washington aux États Unis avec la
+                        participation de 16 nations.
+                        L’assemblage de la station s’est ensuite fait sur plusieurs années : de 1998 à 2011.
+                        En effet, il y a environ une quarantaine de vols à faire afin d’envoyer les 400 tonnes de la
+                        station dans l’espace.
+                    </p>
+                    <div class="button-zone">
+                        <button id="previous-button" class="button-text">Retour</button>
+                        <button id="next-button" class="button-text">Continuer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

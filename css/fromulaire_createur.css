@@ -1,0 +1,219 @@
+body{
+    max-height: 98vh;
+}
+
+.divMessage{
+    align-items: center;
+}
+
+.formCrea{
+    margin-top: 100px;
+}
+
+.sectionFormCrea{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    min-height: 93vh;
+}
+
+label > a {
+    color: var(--black);
+}
+
+.titleFormCrea {
+    color: var(--black);
+    font-family: Poppins Bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 300px;
+}
+
+.bloc-conditions{
+    display: inline-block;
+}
+
+.inputFormCrea {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 45px;
+    width: 296px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.identifiantFormCrea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.textFormCrea {
+    min-height: 180px;
+    height: 250px;
+    max-width: 80vw;
+    width: 622px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+.divMessage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnFormCrea {
+    margin-top: 2rem;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--white);
+    transition: .3s all;
+}
+
+.contactFormCrea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkboxFormCrea{
+    margin: 5px 10px 0 0;
+}
+
+.zoneCheckbox{
+    justify-content: center;
+}
+
+.btnFormCrea:hover{
+    background: var(--orange);
+    color: var(--white) !important;
+}
+.firstRow{
+    margin: 10px 30px;
+    max-width: 90vw;
+}
+
+.btnRetour {
+    border-radius: 10px;
+    background: transparent;
+    padding: 22px 26px;
+    font-size: 17px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: var(--black);
+    margin: 70px 0 0 0;
+}
+
+.btnRetour:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+.imgEnvoyee {
+    width: 100px;
+    margin: 0 0 20px 0;
+}
+
+.sectionCreatorFormulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patienter{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.divForm strong{
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.sectionCreatorFormulaire.ok {
+    height: 88vh;
+}
+
+.sectionCreatorFormulaire.fait{
+    height: 93vh;
+}
+
+.divForm {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 640px) {
+
+    .formCrea{
+        margin-top: 50px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleFormCrea{
+        font-size: 28px;
+        margin-bottom: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .btnFormCrea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .inputContact {
+        border-radius: 10px;
+        height: 35px;
+        background-color: (var--white);
+    }
+
+    .zoneCheckbox{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .zoneCheckbox > label{
+        max-width: 360px;
+    }
+}

@@ -1,0 +1,225 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    position: relative;
+    min-height: 93vh;
+}
+
+.text-container {
+    align-items: center;
+    column-gap: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    min-width: 1500px;
+    margin-top: 100px;
+}
+
+.text-container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left audio {
+    margin-top: 15px;
+}
+
+.left a {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.2s all;
+    font-style: italic;
+}
+
+.left a:hover {
+    color: var(--orange);
+    transition: 0.2s all;
+}
+
+.text-img {
+    justify-self: center;
+    border-radius: 20px;
+    width: 575px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.text-data {
+    text-align: initial;
+}
+
+.text-title {
+    font-family: Poppins Bold;
+    font-size: 35px;
+    line-height: 140%;
+    margin-bottom: 15px;
+    color: var(--orange);
+}
+
+.text-description {
+    font-family: Poppins Medium;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.text-item {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.text-item a {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.2s all;
+    font-style: italic;
+}
+
+.text-item a:hover {
+    color: var(--orange);
+    transition: 0.2s all;
+}
+
+.button-text {
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px 26px;
+    font-size: 14px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button-text:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+.progress {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 175px;
+}
+
+.progress span {
+    border-radius: 7px;
+    margin: 0 10px;
+    width: 120px;
+    height: 20px;
+    border: 2px solid var(--orange);
+}
+
+.fill-progress {
+    background-color: var(--orange);
+}
+
+.button-zone {
+    display: flex;
+}
+
+.button-text:first-child {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+    .text-container {
+        flex-direction: column;
+        min-width: 500px;
+        margin-top: 115px;
+    }
+    .text-data {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .text-img {
+        max-width: 100%;
+        width: 350px;
+    }
+    .button-text {
+        display: inline-block;
+    }
+    .button-zone {
+        justify-content: center;
+    }
+    .text-title { 
+        font-size: 25px;
+    }
+    .text-description {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .progress span {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .progress span {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .progress span {
+        width: 25px;
+    }
+    .button-zone {
+        padding-bottom: 35px;
+    }
+    .text-container {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .text-container {
+        flex-direction: column;
+        min-width: 400px;
+        margin-top: 170px;
+    }
+    .text-data {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .progress span {
+        width: 25px;
+    }
+    .text-container {
+        min-width: 325px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .progress span {
+        width: 17px;
+        height: 17px;
+    }
+    .text-container {
+        min-width: 275px;
+    }
+}
+

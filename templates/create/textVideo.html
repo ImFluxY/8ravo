@@ -1,0 +1,41 @@
+<div class="top-data">
+    <div class="left">
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="title">Titre de l'étape</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="title" class="inputCreate" required>
+        </div>
+        <div class="input-block text-add-step">
+            <div class="bloc-label">
+                <label for="content-text-add">Texte aditionnel</label>
+                <p class="obligatory none" title="Champ obligatoire">*</p>
+            </div>
+            <textarea type="text" name="content-text-add" maxlength="600" cols="50" rows="50" class="inputCreate" required></textarea>
+            <p class="counter">nb / max</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="video-source">Lien de la source vidéo</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="video-source" class="inputCreate" required>
+        </div>
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="video">Vidéo</label>
+            </div>
+            <input type="file" name="video" alt="" src="" accept="video/mp4" class="input-file" required>
+            <p class="max-size-text">Taille maximale : 50 Mo<br>mp4 et avi accepté</p>
+        </div>
+    </div>
+</div>
+<div class="bottom-data">
+    <div class="block-btn-save-step">
+        <input type="submit" value="Enregistrer cette étape" class="btn1 btn-save-step">
+    </div>
+    <!-- <button class="next-step">Étape suivante</button> -->
+</div>

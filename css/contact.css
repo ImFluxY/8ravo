@@ -1,0 +1,220 @@
+:root {
+    --orange: #FF7F00;
+    --black: #1D1D1D;
+    --white: #FFFFFF;
+    --grey: #7C7C7C;
+}
+
+.sectionContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 93vh;
+}
+
+.divForm {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: var(--orange);
+    font-style: normal;
+    font-family: Poppins Bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstRow {
+    margin: 15px 0 0 0;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 300px;
+}
+
+.inputContact {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 45px;
+    width: 296px;
+    background-color: var(--white);
+    padding-left: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.textMessage {
+    width: 620px;
+    padding: 10px 0 140px 10px;
+    overflow: hidden;
+    resize: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.divMessage {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnForm {
+    margin-top: 2rem;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 55px;
+    width: 265px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--white);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.btnForm:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+.reseaux {
+    margin-top: 50px;
+}
+
+.itemReseau {
+    margin: 0 20px;
+}
+
+.itemReseau:hover img {
+    transform: translateY(-10px);
+}
+
+.itemReseau img {
+    height: 45px;
+    transition: .15s ease-in-out;
+}
+
+.imgEnvoyee {
+    width: 100px;
+    margin: 0 0 20px 0;
+}
+
+.btnRetour {
+    border-radius: 10px;
+    background: transparent;
+    padding: 22px 26px;
+    font-size: 17px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: var(--black);
+    margin: 70px 0 0 0;
+}
+
+.btnRetour:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+@media screen and (max-width: 640px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnForm {
+        height: 45px;
+        width: 200px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .inputContact {
+        border-radius: 10px;
+        height: 35px;
+        background-color: (var--white);
+    }
+
+    .textMessage {
+        width: 300px;
+        padding-bottom: 100px;
+    }
+
+    .reseaux {
+        margin-top: 70px;
+    }
+
+    .itemReseau {
+        margin: 0 10px;
+    }
+
+    .itemReseau img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-height: 835px) {
+    .title {
+        font-size: 32px;
+    }
+    .firstRow {
+        margin: 10px 0 0 0;
+    }
+    label {
+        font-size: 14px;
+    }
+    .btnForm {
+        height: 45px;
+        width: 210px;
+        font-size: 14px;
+    }
+    .reseaux {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .itemReseau img {
+        height: 30px;
+    }
+    .inputContact {
+        height: 35px;
+    }
+    .textMessage {
+        padding: 10px 0 85px 10px;
+    }
+}

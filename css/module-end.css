@@ -1,0 +1,127 @@
+.end-module-cnt {
+    align-items: center;
+    column-gap: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    min-width: 1140px;
+}
+
+.end-section {
+    min-height: 100vh;
+}
+
+.end-module-cnt h2 {
+    color: var(--orange);
+    font-size: 35px;
+    font-family: Poppins Bold;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.end-module-cnt span {
+    font-size: 75px;
+    font-family: Poppins Semibold;
+    margin-bottom: 25px;
+}
+
+.end-module-title {
+    color: var(--orange);
+    font-size: 24px;
+    font-family: Poppins Semibold;
+    margin-bottom: 30px;
+}
+
+.note-module {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.note-module p {
+    font-size: 20px;
+    font-family: Poppins Medium;
+    margin-right: 15px;
+}
+
+.note-module-img {
+    line-height: 0;
+}
+
+.note-module-img img {
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.note-module-img img:last-child {
+    margin-right: 0;
+}
+
+.button-end-module {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-end-module button {
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px 26px;
+    font-size: 16px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button-end-module button:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+.button-end-module button:first-child {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+    .end-module-cnt {
+        flex-direction: column;
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .end-module-cnt {
+        flex-direction: column;
+        min-width: 300px;
+        margin-top: 50px;
+    }
+    .note-module {
+        flex-direction: column;
+    }
+    .note-module p {
+        margin-right: 0;
+    }
+    .note-module-img {
+        margin-top: 15px;
+    }
+    .button-end-module {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-end-module button:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .end-module-cnt h2 {
+        font-size: 25px;
+    }
+    .end-module-cnt span {
+        font-size: 50px;
+    }
+}

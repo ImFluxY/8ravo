@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir créateur - 8ravo</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="logo">8ravo</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Contact</a></li>
+
+                <li><a class="log-in" href="#">Connexion</a></li>
+                <li><a class="sign-in" href="#">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="profile">
+        <div class="profilePrincipale fauxFormulaire">
+            <div class="enteteProfile">
+                <button class="divImgProfil" id="bouttonImgProfile">
+                    <img src="./img/avatar.png" class="imgProfile">
+                </button>
+                <div class="titreProfile">
+                    <p class="pseudoProfile">Mathieu Rault</p>
+                    <p class="roleProfile">Créateur</p>
+                </div>
+            </div>
+        <div class="infosProfile">
+            
+            <div class="formulaireProfile">
+                <div class="nomPrenomProfile">
+                    <div class="caseProfile caseProfileNom">
+                        <p>Nom</p>
+                        <div class="barreTextProfile">
+                            Rault
+                        </div>
+                    </div>
+                    <div class="caseProfile caseProfilePrenom">
+                        <p>Prenom</p>
+                        <div class="barreTextProfile">
+                            Mathieu
+                        </div>
+                    </div>
+                </div>
+                <div class="caseProfile caseProfileEmail">
+                    <p>Mail</p>
+                    <div class="barreTextProfile">
+                        mathieu.test@8ravo.fr
+                    </div>
+                </div>
+                <div class="dateMdpProfile">
+                    <div class="caseProfile caseProfileDate">
+                        <p>Date de naissance</p>
+                        <div class="barreTextProfile">
+                            09/08/2002
+                        </div>
+                    </div>
+                    <div class="caseProfile caseProfileMdp">
+                        <div class="textMdpProfile">
+                            <p>Mot de passe</p>
+                            <button id="modifMdp">Modifier</button> 
+                        </div>
+                        <div class="barreTextProfile">
+                            ************
+                        </div>
+                    </div>
+                </div>
+                <div class="divBtnProfile">
+                    <button class="btnProfile" id="btnEditProfile" name="btnEditProfile">Modifier mes informations</button>
+                </div>
+            </div>
+            
+            <div class="notificationsProfile">
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre module "ISS ..." a été <strong>refusée</strong> <a href="#">voir plus</a></p>
+                        
+                    </div>
+                    <p class="dateNotif">14 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>acceptée</strong></p>
+                    </div>
+                    <p class="dateNotif">10 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>refusée</strong></p>
+                    </div>
+                    <p class="dateNotif">08 / 01 / 22</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class="profilePrincipale pseudoFormulaire">
+        <div class="enteteProfile">
+                <button class="divImgProfil" id="bouttonImgProfile">
+                    <img src="../img/avatar.png" class="imgProfile">
+                </button>
+                <div class="titreProfile">
+                    <p class="pseudoProfile" id="pseudoProfile">Mathieu Rault</p>
+                    <p class="roleProfile" id="roleProfile">Créateur</p>
+                </div>
+            </div>
+        <div class="infosProfile">
+            
+            <div class="formulaireProfile">
+                <div class="nomPrenomProfile">
+                    <div class="caseProfile caseProfileNom">
+                        <label for="nomProfile">Nom</label>
+                        <input type="text" class="barreTextProfile inputProfile" id="nomProfile" placeholder="Nom">
+                    </div>
+                    <div class="caseProfile caseProfilePrenom">
+                        <label for="prenomProfile">Prenom</label>
+                        <input type="text" class="barreTextProfile inputProfile" id="prenomProfile" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="caseProfile caseProfileEmail">
+                    <p>Mail</p>
+                    <div class="barreTextProfile">
+                        mathieu.test@8ravo.fr
+                    </div>
+                </div>
+                <div class="dateMdpProfile">
+                    <div class="caseProfile caseProfileDate">
+                        <p>Date de naissance</p>
+                        <div class="barreTextProfile">
+                            09/08/2002
+                        </div>
+                    </div>
+                    <div class="caseProfile caseProfileMdp">
+                        <div class="textMdpProfile">
+                            <p>Mot de passe</p>
+                            <button id="modifMdp">Modifier</button> 
+                        </div>
+                        <div class="barreTextProfile">
+                            ************
+                        </div>
+                    </div>
+                </div>
+                <div class="divBtnProfile">
+                    <button type="submit" class="btnProfile" id="btnValideNomPrenomProfile" name="btnValideNomPrenomProfile">Enregistrer les modifications</button>
+                </div>
+            </div>
+            
+            <div class="notificationsProfile">
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre module "ISS ..." a été <strong>refusée</strong> <a href="#">voir plus</a></p>
+                        
+                    </div>
+                    <p class="dateNotif">14 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>acceptée</strong></p>
+                    </div>
+                    <p class="dateNotif">10 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>refusée</strong></p>
+                    </div>
+                    <p class="dateNotif">08 / 01 / 22</p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form class="profilePrincipale mdpFormulaire">
+        <div class="enteteProfile">
+                <button class="divImgProfil" id="bouttonImgProfile">
+                    <img src="../img/avatar.png" class="imgProfile">
+                </button>
+                <div class="titreProfile">
+                    <p class="pseudoProfile" id="pseudoProfile">Mathieu Rault</p>
+                    <p class="roleProfile" id="roleProfile">Créateur</p>
+                </div>
+            </div>
+        <div class="infosProfile">
+            
+            <div class="formulaireProfile ">
+                    <div class="caseProfile">
+                        <label for="ancienMdp">Ancien mot-de-passe</label>
+                        <input type="password" class="barreTextProfile inputProfile inputMdpProfile" id="ancienMdp">
+                    </div>
+                    <div class="caseProfile">
+                        <label for="nouveauMdp">Nouveau mot-de-passe</label>
+                        <input type="password" class="barreTextProfile inputProfile inputMdpProfile" id="nouveauMdp">
+                    </div>
+                    <div class="caseProfile">
+                        <label for="reNouveauMdp">Retaper nouveau mot-de-passe</label>
+                        <input type="password" class="barreTextProfile inputProfile inputMdpProfile" id="reNouveauMdp">
+                    </div>
+                <div class="divBtnProfile">
+                    <button type="submit" class="btnProfile" id="btnValideMdpProfile" name="btnValideMdpProfile">Valider le nouveau mot-de-passe</button>
+                </div>
+            </div>
+            
+            <div class="notificationsProfile">
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre module "ISS ..." a été <strong>refusée</strong> <a href="#">voir plus</a></p>
+                        
+                    </div>
+                    <p class="dateNotif">14 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>acceptée</strong></p>
+                    </div>
+                    <p class="dateNotif">10 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="../img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>refusée</strong></p>
+                    </div>
+                    <p class="dateNotif">08 / 01 / 22</p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form class="profilePrincipale avatarFormulaire">
+        <div class="enteteProfile">
+                <button class="divImgProfil" id="bouttonImgProfile">
+                    <img src="./img/avatar.png" class="imgProfile">
+                </button>
+                <div class="titreProfile">
+                    <p class="pseudoProfile" id="pseudoProfile">Mathieu Rault</p>
+                    <p class="roleProfile" id="roleProfile">Créateur</p>
+                </div>
+            </div>
+        <div class="infosProfile">
+            
+            <div class="formulaireProfile formulaireAvatarProfile">
+                    <div class="divSelectAvatar">
+                        <div class="avatarDefault">
+                            <input type="radio" id="avatar1" name="avatar" value="avatar1">
+                            <label for="avatar1">
+                                <img href="./img/infographie/iconProfile1.jpg">
+                            </label>
+                        </div>
+                        <div class="avatarDefault">
+                            <input type="radio" id="avatar2" name="avatar" value="avatar2">
+                            <label for="avatar2">
+                                <img href="./img/infographie/iconProfile2.jpg">
+                            </label>
+                        </div>
+                        <div class="avatarDefault">
+                            <input type="radio" id="avatar3" name="avatar" value="avatar3">
+                            <label>
+                                <img for="avatar3" href="./img/infographie/iconProfile3.jpg">
+                            </label>
+                        </div>
+                        <div class="avatarDefault">
+                            <input type="radio" id="avatar4" name="avatar" value="avatar4">
+                            <label for="avatar4">
+                                <img href="./img/infographie/iconProfile4.jpg">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="divFileAvatar">
+                        <input type="file" id="avatarFile" name="avatarFile" accept="image/png, image/jpeg">
+                    </div>
+                    <div class="divBtnAvatar">
+                        <button class="annulerProfile">annuler</button>
+                        <button type="submit" class="btnProfile" id="btnValideAvatarProfile" name="btnValideAvatarProfile">Valider le nouveau mot-de-passe</button>
+                    </div>
+            </div>
+            
+            <div class="notificationsProfile">
+                <div class="notifProfile">
+                    <img src="./img/bell.svg">
+                    <div>
+                        <p>Votre module "ISS ..." a été <strong>refusée</strong> <a href="#">voir plus</a></p>
+                        
+                    </div>
+                    <p class="dateNotif">14 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="./img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>acceptée</strong></p>
+                    </div>
+                    <p class="dateNotif">10 / 01 / 22</p>
+                </div>
+                <div class="notifProfile">
+                    <img src="./img/bell.svg">
+                    <div>
+                        <p>Votre demande de créateur a été <strong>refusée</strong></p>
+                    </div>
+                    <p class="dateNotif">08 / 01 / 22</p>
+                </div>
+            </div>
+        </div>
+    </form>
+                <div class="modulesProfile">
+                <div class="lignesProfilModule">
+                    <h2 class="profileH2">Modules en cours</h2>
+                    <div class="imagesModule">
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="lignesProfilModule">
+                    <h2 class="profileH2">Modules terminés</h2>
+                    <div class="imagesModule">
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="lignesProfilModule">
+                    <h2 class="profileH2">Notes</h2>
+                    <div class="imagesModule">
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                        <p class="noteProfile">4.5</p>
+                    </div>
+                    <div class="exempleImgModule">
+                        <div class="profilModuleCadreImg">
+                            <img src="./img/chat.jpg" alt="" class="profilModuleImg">
+                        </div>
+                        <p class="noteProfile">4.6</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/profil.js"></script>
+  
+</body>
+
+</html>

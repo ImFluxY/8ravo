@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module - 8ravo</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/gestion_popup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="popup delete">
+            <img class="cross" src="./img/cross.svg" alt="croix fermer popup" title="Fermer">
+            <div class="popup-content delete">
+                <h1 class="title-popup">Supprimer un module</h1>
+                <div class="bloc-input-delete">
+                    <div class="input-block select category-choice-delete">
+                        <div class="bloc-label">
+                            <label class="select-category-delete" for="category-delete">Catégorie du module</label>
+                            <p class="obligatory" title="Champ obligatoire">*</p>
+                        </div>
+                        <select name="category-delete" id="category-delete" class="inputCreate category-choice">
+                            <option value="" class="choice-type-text">Choisir la catégorie du module à supprimer</option>
+                            <option value="sciences">Sciences</option>
+                            <option value="histGeo">Histoire Géo</option>
+                            <option value="web">Web</option>
+                            <option value="arts">Arts</option>
+                        </select>
+                        <img src="./img/arrow.svg" alt="Fleche selection liste" class="arrow-select">
+                    </div>
+                    <div class="input-block select name-choice-delete">
+                        <div class="bloc-label">
+                            <label class="select-name-delete" for="name-delete">Nom du module</label>
+                            <p class="obligatory" title="Champ obligatoire">*</p>
+                        </div>
+                        <select name="name-delete" id="name-delete" class="inputCreate name-choice">
+                            <option value="" class="choice-type-text">Choisir le nom du module à supprimer</option>
+                            <option value="sciences">Sciences</option>
+                            <option value="histGeo">Histoire Géo</option>
+                            <option value="web">Web</option>
+                            <option value="arts">Arts</option>
+                        </select>
+                        <img src="./img/arrow.svg" alt="Fleche selection liste" class="arrow-select">
+                    </div>
+                </div>
+                <div class="bloc-confirm-delete">
+                    <input type="checkbox" name="confirm-delete" required>
+                    <label for="confirm-delete" class="text-confirm-delete">En cochant cette case, j'accepte la suppresion immédiate de ce module</label>
+                </div>
+                <div class="block-btn-demand">
+                    <button class="btn2 btn-delete-select-module">
+                        Supprimer le module
+                    </button>
+                </div>
+            </div>
+        </div>  
+    </main>
+    <script src="./js/input_file.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+.sectionInscription{
+    height: 93vh;
+}
+
+.btnInscription {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 55px;
+    width: 150px;
+    background-color: var(--white);
+    padding: 10px;
+    font-size: 18px;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.btnInscription:hover{
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+.boldLink {
+    font-family: Poppins Bold;
+    text-decoration: none;
+    color: var(--orange);
+    margin-left: 5px;
+}
+
+.dejaInscrit {
+    margin: 25px 0;
+    font-family: Poppins Bold;
+}
+
+.divCgu {
+    margin: 15px 0 0 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.lienCgu {
+    text-decoration: none;
+    color: var(--orange);
+    font-family: Poppins Bold;
+    margin-left: 4px;
+}
+
+.cgu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 7px; 
+}
+
+@media screen and (max-width: 640px) {
+    .divForm {
+        width: 75%;
+    }
+
+    .col{
+        margin: 7px 7px 7px 7px;
+    }
+
+    .dejaInscrit {
+        margin: 20px 0 20px 0;
+    }
+
+    .divCgu{
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 835px) {
+    .btnInscription {
+        font-size: 14px;
+        height: 45px;
+    }
+}

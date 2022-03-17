@@ -1,0 +1,59 @@
+<div class="top-data">
+    <div class="left">
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="title">Titre de l'étape</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="title" class="inputCreate" required>
+        </div>
+        <div class="input-block text-add-step">
+            <div class="bloc-label">
+                <label for="content-text-add">Texte aditionnel</label>
+                <p class="obligatory none" title="Champ obligatoire">*</p>
+            </div>
+            <textarea type="text" name="content-text-add" maxlength="600" cols="50" rows="50" class="inputCreate" required></textarea>
+            <p class="counter">nb / max</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="audio-source">Lien de la source audio</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="audio-source" class="inputCreate" required>
+        </div>
+        <div class="input-block">
+            <div class="bloc-label">
+                <label for="img-source">Lien de la source image</label>
+                <p class="obligatory" title="Champ obligatoire">*</p>
+            </div>
+            <input type="text" name="img-source"  class="inputCreate" required>
+        </div>
+        <div class="double-input-file">
+            <div class="input-block">
+                <div class="bloc-label">
+                    <label for="audio">Audio</label>
+                    <p class="obligatory" title="Champ obligatoire">*</p>
+                </div>
+                <input type="file" name="audio" alt="" src="" accept="audio/mp3, audio/wav" class="input-file" required>
+                <p class="max-size-text">Taille maximale : 30 Mo<br>mp4 accepté</p>
+            </div>
+            <div class="input-block">
+                <div class="bloc-label">
+                    <label for="image">Image</label>
+                    <p class="obligatory" title="Champ obligatoire">*</p>
+                </div>
+                <input type="file" name="image" alt="" src="" accept="image/png, image/jpeg" class="input-file" required>
+                <p class="max-size-text">Taille maximale : 5 Mo<br>mp4 accepté</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-data">
+    <div class="block-btn-save-step">
+        <input type="submit" value="Enregistrer cette étape" class="btn1 btn-save-step">
+    </div>
+    <!-- <button class="next-step">Étape suivante</button> -->
+</div>

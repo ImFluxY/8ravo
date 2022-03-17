@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir créateur - 8ravo</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/createur.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-website">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="accueil.html" class="logo">8ravo</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Contact</a></li>
+
+                <li><a class="log-in" href="#">Connexion</a></li>
+                <li><a class="sign-in" href="#">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="createur">
+            <div class="createur-container container">
+                <div class="createurEnCours createurCol">
+                    <h2 class="createurH2">Modules en cours</h2>
+                    <div class="exempleDeModule">
+                        <div class="createurImage">
+                            <img src="./img/patrick-balkany.jpeg" alt="" class="createur-img">
+                        </div>
+                        <div class="createur-titre">
+                            <p class="titreC">Edward Snowden, l'avènement d'un lanceur d'alerte.</p>
+                            <a href="#" class="sousTitreC">Continuer la création</a>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+                <div class="createurEnvoyes createurCol">
+                    <h2 class="createurH2">Modules envoyés</h2>
+                    <div class="exempleDeModule">
+                        <div class="createurImage">
+                            <img src="./img/patrick-balkany.jpeg" alt="" class="createur-img">
+                        </div>
+                        <div class="createur-titre">
+                            <p class="titreC">Comprendre la guerre d'Algérie</p>
+                            <p id="etatModule" class="sousTitreC">Etat : En attente | <a href="#">Voir le module</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="createurBoutons createurCol">
+                    <h2 class="createurH2">Boutons utiles</h2>
+                    <button id="exempleDeBouton" class="createurBtn">Ecrire un nouveau module</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

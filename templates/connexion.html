@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/global.css" type="text/css" />
+    <link rel="stylesheet" href="../css/contact.css" type="text/css" />
+    <link rel="stylesheet" href="../css/connexion.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> "Connexion Bravo"</title>
+</head>
+
+<body>
+    <main>
+        <section id="connexion" class="sectionConnexion">
+            <div class="divForm">
+                <h2 class="title">Connexion</h2>
+                <form id="formulaire" class="contactForm" method="post">
+                    <div class="row firstRow">
+                        <div class="col">
+                            <label for="mail">E-mail</label>
+                            <input class="inputContact" name="mail" id="mail" required type="email">
+                            <label for="mdp">Mot de passe</label>
+                            <input class="inputContact" type="password" id="mdp" name="mdp">
+                        </div>
+                    </div>
+                    <div class="options">
+                        <p class="optionLigne">Mot de passe oublié? <a class="boldLink" target="_blank"
+                                href="mdpoublie.html">Cliquez ici</a></p>
+                        <p class="optionLigne">Pas encore inscrit? <a class="boldLink" target="_blank"
+                                href="inscription.html">S'inscrire</a></p>
+                    </div>
+                    <input class="btnConnexion" type="submit" id="valider" name="valider" value="→ Se connecter" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>

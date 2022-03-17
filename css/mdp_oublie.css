@@ -1,0 +1,94 @@
+.sectionMdpOublie {
+    height: 93vh;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: var(--orange);
+    font-style: normal;
+    font-family: Poppins Bold;
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mdpOublieForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+.infoInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputEmail {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 45px;
+    width: 296px;
+    background-color: var(--white);
+    padding-left: 10px;
+}
+
+label {
+    font-family: Poppins Regular;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.btnForm {
+    margin-top: 2.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    background-color: var(--white);
+    transition: .3s all;
+
+}
+
+.btnForm:hover {
+    background: var(--orange);
+    color: var(--white) !important;
+}
+
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .btnForm{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .inputEmail {
+        width: 280px;
+    }
+}

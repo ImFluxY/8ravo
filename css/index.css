@@ -1,0 +1,250 @@
+.index-container {
+    align-items: center;
+    column-gap: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    min-width: 1140px;
+    width: 100%;
+}
+
+.index {
+    min-height: 100vh;
+}
+
+.index-container h1 {
+    font-size: 144px;
+    color: var(--orange);
+    font-family: Poppins Bold;
+}
+
+.index-container p {
+    font-size: 25px;
+    font-family: Poppins Medium;
+}
+
+.index-container button {
+    border-radius: 10px;
+    background: transparent;
+    padding: 22px 26px;
+    font-size: 17px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin-top: 75px;
+}
+
+.index-container button:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+.img-particle-cnt {
+    position: absolute;
+    display: block;
+}
+
+.img-particle-cnt-1 {
+    top: 80%;
+    left: 20%;
+}
+
+.img-particle-cnt-2 {
+    top: 25%;
+    left: 65%;
+}
+
+.img-particle-cnt-3 {
+    top: 75%;
+    left: 85%;
+}
+
+.img-particle-cnt-4 {
+    top: 25%;
+    left: 20%;
+}
+
+.img-particle-cnt-1, .img-particle-cnt-2, .img-particle-cnt-3, .img-particle-cnt-4 {
+    animation: img-particle-anim 45s infinite cubic-bezier(.455,.03,.515,.955);
+}
+
+.img-particle-book {
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    filter: blur(2px);
+    background-repeat: no-repeat;
+    background: url("../img/book.png");
+}
+
+.img-particle-ampule {
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    filter: blur(2px);
+    background: url("../img/ampule.png");
+    background-repeat: no-repeat;
+}
+
+.img-particle-hat {
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    filter: blur(2px);
+    background-repeat: no-repeat;
+    background: url("../img/hat.png");
+}
+
+.img-particle-pen {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    filter: blur(2px);
+    background-repeat: no-repeat;
+    background: url("../img/pen.png");
+}
+
+@keyframes img-particle-anim {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+
+    50% {
+        transform: translateY(-100px) rotate(270deg)
+    }
+}
+
+.project-data-cnt {
+    background: var(--orange);
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.project-data-cnt .project-data-title {
+    color: var(--white);
+    font-family: Poppins Bold;
+    font-size: 35px;
+}
+
+.project-data-cnt .project-data-title h2 {
+    font-family: Poppins Bold;
+}
+
+.project-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.project-data-box {
+    padding: 50px;
+    display: flex;
+    max-width: 33%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-data-box p {
+    color: var(--white);
+}
+
+.project-data-box p:first-child {
+    font-size: 120px;
+    font-family: Poppins Bold;
+}
+
+.project-data-box p:last-child {
+    font-size: 22px;
+    font-family: Poppins Medium;
+}
+
+.discover-module {
+    min-height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-disc-module {
+    border-radius: 10px;
+    background: transparent;
+    padding: 22px 26px;
+    font-size: 17px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.button-disc-module:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+@media screen and (max-width: 1300px) {
+    .project-data-box {
+        max-width: 50%;
+    }
+    .index-container {
+        flex-direction: column;
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .index-container {
+        flex-direction: column;
+        min-width: 400px;
+    }
+    .index-container h1 {
+        font-size: 114px;
+    }
+    .index-container p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .project-data-box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .index-container {
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .index-container h1 {
+        font-size: 65px;
+    }
+    .index-container p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .img-particle-cnt-3 {
+        top: 75%;
+        left: 75%;
+    }
+    .project-data-cnt .project-data-title {
+        font-size: 25px;
+    }
+}

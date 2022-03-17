@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/global.css" type="text/css" />
+    <link rel="stylesheet" href="../css/fromulaire_createur.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> "Contact Bravo"</title>
+</head>
+
+<body>
+    <main>
+        <section class="sectionFormCrea">
+            <div class="formCrea">
+                <h2 class="titleFormCrea">Vous n'êtes pas encore créateur?</h2>
+                <form class="identifiantFormCrea" method="post">
+                    <div class="row firstRow">
+                        <div class="col">
+                            <label for="nom">Nom</label>
+                            <input class="inputFormCrea" name="nom" id="nom" required type="text" placeholder="Nom">
+                        </div>
+
+                        <div class="col">
+                            <label for="prenom">Prénom</label>
+                            <input class="inputFormCrea" name="prenom" id="prenom" required type="text" placeholder="Prénom">
+                        </div>
+                    </div>
+
+                    <div class="divMessage">
+                        <label for="message">Expliquez nous rapidement vos motivations :</label>
+                        <textarea class="inputFormCrea textFormCrea" name="message" id="message" required
+                            type="text"></textarea>
+                        <div class="row zoneCheckbox">
+                            <input class="checkboxFormCrea" name="prenom" id="prenom" required type="checkbox">
+                            <label for="prenom">J'accepte les <a href="./conditions_utilisation.html">conditions générales d'utilisations</a></label>
+                        </div>
+                    </div>
+                    
+
+                    <button class="btnFormCrea" type="submit" id="valider" name="valider">Envoyer ma demande <br>pour devenir créateur</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>

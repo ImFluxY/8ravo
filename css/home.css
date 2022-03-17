@@ -1,0 +1,102 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home {
+    position: relative;
+    min-height: 100vh;
+}
+
+.home-container {
+    align-items: center;
+    column-gap: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    min-width: 1140px;
+}
+
+.home-img {
+    justify-self: center;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.home-data {
+    text-align: initial;
+}
+
+.home-title {
+    font-family: Poppins Bold;
+    font-size: 35px;
+    line-height: 140%;
+    margin-bottom: 15px;
+    color: var(--orange);
+}
+
+.home-description {
+    font-family: Poppins Medium;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.button-home {
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px 26px;
+    font-size: 14px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button-home:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+@media screen and (max-width: 1300px) {
+    .home-container {
+        flex-direction: column;
+        min-width: 500px;
+    }
+    .home-data {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .home-img {
+        max-width: 75%;
+    }
+    .button-home {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .home-container {
+        flex-direction: column;
+        min-width: 400px;
+    }
+    .home-data {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .home-container {
+        flex-direction: column;
+        min-width: 300px;
+    }
+}

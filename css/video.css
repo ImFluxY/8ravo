@@ -1,0 +1,206 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video {
+    position: relative;
+    min-height: 93vh;
+}
+
+video {
+    border-radius: 10px;
+    width: 650px;
+}
+
+.video-container {
+    align-items: center;
+    column-gap: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    min-width: 1500px;
+    margin-top: 75px;
+}
+
+.progress {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 175px;
+}
+
+.progress span {
+    border-radius: 7px;
+    margin: 0 10px;
+    width: 120px;
+    height: 20px;
+    border: 2px solid var(--orange);
+}
+
+.fill-progress {
+    background-color: var(--orange);
+}
+
+.video-img {
+    justify-self: center;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.video-data {
+    text-align: initial;
+}
+
+.video-title {
+    font-family: Poppins Bold;
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 15px;
+    color: var(--orange);
+}
+
+.video-description {
+    font-family: Poppins Medium;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.video-item {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.video-item a {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.2s all;
+    font-style: italic;
+}
+
+.video-item a:hover {
+    color: var(--orange);
+    transition: 0.2s all;
+}
+
+.button-video {
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px 26px;
+    font-size: 14px;
+    line-height: 0;
+    border: 2px solid var(--orange);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button-video:hover {
+    color: var(--white);
+    transition: 0.3s all;
+    background: var(--orange);
+}
+
+.button-zone {
+    display: flex;
+}
+
+.button-video:first-child {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+    .video-container {
+        flex-direction: column;
+        min-width: 900px;
+        margin-top: 135px;
+    }
+    video {
+        width: 450px;
+        max-width: 100%;
+    }
+    .video-data {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .button-zone {
+        justify-content: center;
+    }
+    .video-title { 
+        font-size: 25px;
+    }
+    .video-description {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .progress span {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .video-container {
+        min-width: 700px;  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        min-width: 600px;  
+    }
+    video {
+        width: 400px;
+    }
+    .progress span {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .video-container {
+        min-width: 400px; 
+        margin-top: 195px; 
+    }
+    video {
+        width: 400px;
+    }
+    .progress span {
+        width: 25px;
+    }
+    .button-zone {
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .video-container {
+        min-width: 300px; 
+        margin-top: 225px;
+    }
+    .progress span {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .video-container {
+        min-width: 225px; 
+        margin-top: 260px;
+    }
+    .progress span {
+        width: 17px;
+        height: 17px;
+    }
+}

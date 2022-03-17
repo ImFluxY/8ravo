@@ -1,0 +1,44 @@
+.mentions {
+    margin: 0 10vw 8vh;
+    padding-top: 15vh;
+}
+
+.mentions h1 {
+    color: var(--orange);
+    font-family: Poppins Bold;
+    font-size: 40px;
+    margin: 0 auto 4vh;
+    text-align: center;
+}
+
+.mentions h2 {
+    color: var(--black);
+    font-family: Poppins Semibold;
+    font-size: 1.5rem;
+    margin: 4vh 1vw 2.5vh auto;
+}
+
+.mentions h3 {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 2vh 1.5vw 1vh auto;
+}
+
+.mentions a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.mentions li,
+.mentions p {
+    margin-left: 2vw;
+    font-size: 1rem;
+}
+
+
+.btn-back-home {
+    margin: 3vh auto;
+    max-width: 250px;
+}
+
